@@ -1,7 +1,6 @@
 #![no_std]
 
 use num_derive::FromPrimitive;    
-use num_traits::FromPrimitive;
 //Testbench constants are included here as well, though they are not technically part of neutronstar
 
 pub const NEUTRON_INTERRUPT:u8 = 0x40;
