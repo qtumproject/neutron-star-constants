@@ -1,5 +1,5 @@
 [package]
-name = "neutronstar-constants"
+name = "neutron-star-constants"
 version = "0.1.0"
 authors = ["Jordan Earls <earlz@earlz.net>"]
 edition = "2018"
