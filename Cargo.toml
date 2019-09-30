@@ -8,22 +8,6 @@ edition = "2018"
 
 [dependencies]
 
-[dependencies.struct_deser]
-version = "0.1.1"
-default-features = false
-
-[dependencies.struct_deser-derive]
-version = "0.1.0"
-default-features = false
-
-[dependencies.num-traits]
-version = "0.2"
-default-features = false
-
-[dependencies.num]
-version = "0.2.0"
-default-features = false
-
-[dependencies.num-derive]
-version = "0.3.0"
+[dependencies.num_enum]
+version = "0.4.1"
 default-features = false
