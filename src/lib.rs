@@ -29,6 +29,8 @@ pub enum NeutronSyscalls{
     DropSCCS,
     /// How many items are in the SCCS
     DepthOfSCCS,
+    /// How much gas has been used up to this point in execution
+    GasUsed,
     IsCreate = 0xF000
 }
 /// The system calls available using the TESTBENCH_INTERRUPT 
@@ -41,7 +43,13 @@ pub enum TestbenchSyscalls{
     /// Logs an info message
     LogInfo,
     /// Logs a debug message
-    LogDebug
+    LogDebug,
+    /// Prints a message to the console. Not guaranteed to exist in all circumstances
+    /// and designed primarily for use in testing
+    Print,
+    /// Disables all diagnostics messages excluding crashes.
+    /// Primarily designed for use in testing
+    DisableDiagnostics,
 }
 
 #[derive(Debug, Default, Copy, Clone, Eq, PartialEq)]
