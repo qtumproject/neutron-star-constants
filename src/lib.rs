@@ -52,7 +52,7 @@ pub enum TestbenchSyscalls{
     DisableDiagnostics,
 }
 
-#[derive(Debug, Default, Copy, Clone, Eq, PartialEq)]
+#[derive(Debug, Default, Copy, Clone, Eq, PartialEq, Hash)]
 #[repr(C)]
 pub struct NeutronShortAddress{
     pub version: u32,
